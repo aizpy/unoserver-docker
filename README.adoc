@@ -33,7 +33,7 @@ Just run:
 
 [source,bash]
 ----
-docker run -it -v <your directory>:/data/ ghcr.io/unoconv/unoserver-docker
+docker run -it -v <your directory>:/data/ ghcr.io/aizpy/unoserver-docker
 ----
 
 After you start the container, you can use link:https://github.com/unoconv/unoserver#unoconvert[unoconvert] command to convert documents using LibreOffice.
@@ -42,7 +42,7 @@ or to convert directly using unoconvert:
 
 [source,bash]
 ----
-docker run -it -v <your directory>:/data/ ghcr.io/unoconv/unoserver-docker unoconvert /data/document.docx /data/document.pdf
+docker run -it -v <your directory>:/data/ ghcr.io/aizpy/unoserver-docker unoconvert /data/document.docx /data/document.pdf
 ----
 
 Docker maps your directory with /data directory in the container.
@@ -54,7 +54,7 @@ You might need to add the option `:z` or `:Z` like `<your directory>:/data/:z` o
 
 [source,bash]
 ----
-docker run -p 2003:2003 ghcr.io/unoconv/unoserver-docker
+docker run -p 2003:2003 ghcr.io/aizpy/unoserver-docker
 ----
 
 After you start the container, you can use link:https://github.com/unoconv/unoserver#unoconvert[unoconvert] command to convert documents using LibreOffice.
